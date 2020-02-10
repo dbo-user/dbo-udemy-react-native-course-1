@@ -28,12 +28,10 @@ const ListScreen = () => {
                         {item.name} - Age {item.age}
                     </Text>
                 );
-            } // end renderItem
+            }} // end renderItem
 
-            }/> // end FlatList
-
-        
-        
+        /> // end FlatList
+  
       ); // end return
 }; // end const ListScreen
     

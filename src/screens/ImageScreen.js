@@ -9,9 +9,21 @@ const ImageScreen = () => {
             <Text style={styles.textStyle}>
                 Image Screen
             </Text>
-            <ImageDetail title='Forest' imageSource={require('../../assets/forest.jpg')}/>
-            <ImageDetail title='Beach' imageSource={require('../../assets/beach.jpg')}/>
-            <ImageDetail title='Mountain' imageSource={require('../../assets/mountain.jpg')}/>
+            <ImageDetail 
+                title='Forest' 
+                imageSource={require('../../assets/forest.jpg')} 
+                score={9}
+            />
+            <ImageDetail 
+                title='Beach'
+                imageSource={require('../../assets/beach.jpg')}
+                score={7}
+             />
+            <ImageDetail 
+                title='Mountain' 
+                imageSource={require('../../assets/mountain.jpg')}
+                score={10}
+            />
         </View>
         
       ); // end return
@@ -19,7 +31,8 @@ const ImageScreen = () => {
     
 const styles = StyleSheet.create({
     textStyle: {
-    marginVertical: 50
+        marginVertical: 20,
+        fontSize: 30
     }
 }); // end styles
     
