@@ -1,14 +1,14 @@
 import React, {useState} from "react";
 import { Text, StyleSheet, View, TextInput } from "react-native";
 
-const TextScreen = () => {
+const BoxScreen = () => {
 
     const [password, setPassword] = useState('');
     
     return (
         <View>
             
-            <Text style={styles.textStyle}>The Text Screen</Text>
+            <Text style={styles.textStyle}>The Box Screen</Text>
             <Text style={styles.textStyle}>Enter Password:</Text>
             <TextInput 
                 style={styles.textInput}
@@ -22,7 +22,7 @@ const TextScreen = () => {
              
         </View>
     ) // end return
-}; // end const TextScreeen
+}; // end const BoxScreeen
   
   const styles = StyleSheet.create({
     textStyle: {
@@ -36,4 +36,4 @@ const TextScreen = () => {
     }
   }); // end styles
   
-export default TextScreen;
+export default BoxScreen;
